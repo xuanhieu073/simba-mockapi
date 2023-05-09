@@ -16,4 +16,19 @@ router.post('/sign-up', (req, res) => {
   }, 500);
 })
 
+router.post('/quiz', (req, res) => {
+  console.log("🚀 ~ file: blog.js:20 ~ router.post ~ req.body", req.body)
+  return res.status(203).json(
+    {
+      "code": 203,
+      "msg": "Success!",
+      "data": {
+        "score": "4/4",
+        "scoreText": "Nice work - perfect score!"
+      },
+      "total": 0
+    }
+  )
+})
+
 module.exports = router;
