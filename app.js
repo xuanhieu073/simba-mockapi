@@ -17,6 +17,8 @@ app.use('/leadership', require('./routes/leadership'));
 app.use('/blog', require('./routes/blog'));
 app.use('/form', require('./routes/form'));
 app.use('/search', require('./routes/search'))
+app.use('/faq', require('./routes/faq'))
+app.use('/lightbox', require('./routes/lightbox'))
 
 var staticDir = express.static(path.resolve(__dirname, 'public'));
 app.use(staticDir);
